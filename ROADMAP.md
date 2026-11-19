@@ -26,21 +26,21 @@ Plan de gestión maestro para lanzar la agencia `{ locro. }` (`ia & software a m
 
 ---
 
-## Track 2 — Web (`apps/web` — `locro.com.ar`)
+## Track 2 — Web (`apps/web` — `locro.com.ar`) — `[/]` En progreso (listo para deploy)
 **Objetivo:** Publicar la landing page oficial de `locro.com.ar` con estética Bento Grid, mensaje claro para Pymes y captura de leads automatizada.
 
-- [ ] Inicializar proyecto Next.js (App Router) + TypeScript + Tailwind CSS en `apps/web`
-- [ ] Configurar Google Fonts (`Space Grotesk`, `Inter`, `JetBrains Mono`) y conectar `brand/tokens.css`
-- [ ] Definir arquitectura de información y copy final de la landing:
-  - [ ] Hero con propuesta de valor directa, CTA a diagnóstico e isotipo/visual Bento
-  - [ ] Sección "Problemas reales que ordenamos" (planillas, atención manual, sistemas desconectados)
-  - [ ] Sección "Qué armamos" en Bento Grid (Software a medida, Agentes de IA, Automatizaciones)
-  - [ ] Sección "Cómo trabajamos" (`// 01 diagnóstico` -> `// 02 prototipo` -> `// 03 integración`)
-  - [ ] Formulario de contacto / diagnóstico breve
-  - [ ] Footer con canales (`@somoslocro`, `somoslocro@gmail.com`) y copyright
-- [ ] Conectar formulario de contacto con endpoint API / webhook de n8n (con validación y protección anti-spam)
-- [ ] Configurar SEO básico: metadata, Open Graph, `sitemap.xml`, `robots.txt` y performance (Core Web Vitals)
-- [ ] Configurar dominio `locro.com.ar`, SSL y deploy productivo en Vercel
+- [x] Inicializar proyecto Next.js (App Router) + TypeScript + Tailwind CSS en `apps/web`
+- [x] Configurar Google Fonts (`Space Grotesk`, `Inter`, `JetBrains Mono`) y conectar `brand/tokens.css` (sincronizado en `apps/web/src/styles/tokens.css`)
+- [x] Definir arquitectura de información y copy final de la landing:
+  - [x] Hero con propuesta de valor directa, CTA a diagnóstico e isotipo/visual Bento (`HeroSection.tsx`)
+  - [x] Sección "Problemas reales que ordenamos" + herramientas actuales (`ProblemsSection.tsx`)
+  - [x] Sección "Qué armamos" en Bento Grid (4 packs + diagrama de nodos en `ServicesBento.tsx`)
+  - [x] Sección "Cómo trabajamos" (`// 01 diagnóstico` -> `// 02 prototipo` -> `// 03 integración` en `ProcessSection.tsx`)
+  - [x] Formulario de contacto / diagnóstico breve (`ContactSection.tsx`)
+  - [x] Footer con canales (`@somoslocro`, `somoslocro@gmail.com`) y copyright (`Footer.tsx`)
+- [x] Conectar formulario de contacto con endpoint API (`POST /api/leads`) listo para webhook de n8n (con validación, honeypot anti-spam y `.env.example`)
+- [x] Configurar SEO básico: metadata, Open Graph (`/og-image.png`), JSON-LD, `sitemap.xml` y `robots.txt`
+- [ ] Configurar dominio `locro.com.ar`, SSL y deploy productivo en Vercel (Root Directory: `apps/web`)
 - [ ] Integrar analítica liviana (Plausible / PostHog / GA4) y verificar eventos de conversión
 
 ---
