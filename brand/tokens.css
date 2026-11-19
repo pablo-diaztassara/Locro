@@ -1,0 +1,71 @@
+/**
+ * { locro. } — Design Tokens Oficiales (Fuente de Verdad)
+ * Descriptor: ia & software a medida_
+ *
+ * Regla crítica: Prohibido usar negro puro (#000000).
+ * Todas las tintas y sombras derivan de Marrón Tierra (#3A2212).
+ */
+
+:root {
+  /* === Paleta Oficial === */
+  --locro-crema-caldo: #F9F4EB;
+  --locro-blanco-puro: #FFFFFF;
+  --locro-borde-arena: #E6DDD0;
+  --locro-marron-tierra: #3A2212;
+  --locro-marron-suave: #6E5A4F;
+  --locro-naranja-vibrante: #FF5A00;
+  --locro-naranja-hover: #E04F00;
+  --locro-amarillo-maiz: #EBA83A;
+
+  /* === Tokens Semánticos === */
+  --locro-bg: var(--locro-crema-caldo);
+  --locro-surface: var(--locro-blanco-puro);
+  --locro-surface-dark: var(--locro-marron-tierra);
+  --locro-surface-accent: var(--locro-amarillo-maiz);
+  --locro-border: var(--locro-borde-arena);
+
+  --locro-ink: var(--locro-marron-tierra);
+  --locro-ink-muted: var(--locro-marron-suave);
+  --locro-ink-on-dark: var(--locro-crema-caldo);
+  --locro-ink-muted-on-dark: var(--locro-borde-arena);
+  --locro-ink-on-accent: var(--locro-blanco-puro);
+
+  --locro-accent: var(--locro-naranja-vibrante);
+  --locro-accent-hover: var(--locro-naranja-hover);
+  --locro-maize: var(--locro-amarillo-maiz);
+
+  /* === Tipografías (Google Fonts) === */
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* === Escala Tipográfica === */
+  --text-h1: clamp(2.25rem, 4.5vw, 3.5rem);
+  --text-h2: clamp(1.75rem, 3vw, 2.25rem);
+  --text-h3: clamp(1.25rem, 2vw, 1.375rem);
+  --text-body-lg: 1.125rem;
+  --text-body: 1rem;
+  --text-sm: 0.875rem;
+  --text-mono: 0.8125rem;
+
+  /* === Radios (Bento Grid & Componentes) === */
+  --locro-radius-sm: 8px;
+  --locro-radius-md: 12px;
+  --locro-radius-lg: 20px;
+  --locro-radius-xl: 24px;
+  --locro-radius-avatar: 20%;
+  --locro-radius-pill: 9999px;
+
+  /* === Espaciado & Layout === */
+  --locro-bento-gap: 1.25rem;
+  --locro-card-padding: 1.75rem;
+  --locro-container-max: 1200px;
+
+  /* === Sombras Cálidas (base #3A2212, nunca #000000) === */
+  --locro-shadow-sm: 0 1px 2px rgba(58, 34, 18, 0.05);
+  --locro-shadow-md: 0 8px 24px -8px rgba(58, 34, 18, 0.08);
+  --locro-focus-ring: 0 0 0 3px rgba(255, 90, 0, 0.25);
+
+  /* === Escala mínima de assets === */
+  --locro-isotipo-min-height: 120px;
+}
