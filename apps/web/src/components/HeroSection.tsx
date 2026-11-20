@@ -57,24 +57,24 @@ export function HeroSection() {
 
         {/* Columna Derecha Bento: Datos clave */}
         <div className="flex flex-col justify-between rounded-[20px] bg-locro-surface-dark p-7 text-locro-ink-on-dark sm:p-8 lg:col-span-4">
-          <div className="flex items-center justify-between font-mono text-[12px] text-locro-border/80">
+          <div className="flex items-center justify-between font-mono text-[12px] text-locro-sand/80">
             <span>{`{ locro. }`}</span>
           </div>
 
-          <div className="my-6 divide-y divide-locro-border/15">
+          <div className="my-6 divide-y divide-locro-sand/15">
             {proofPoints.map((item) => (
               <div key={item.title} className="py-4 first:pt-0 last:pb-0">
                 <span className="font-display text-[22px] leading-tight font-bold tracking-[-0.02em] text-locro-maize sm:text-[24px]">
                   {item.title}
                 </span>
-                <p className="mt-1.5 text-[14px] leading-[1.5] text-locro-border/85">
+                <p className="mt-1.5 text-[14px] leading-[1.5] text-locro-sand/85">
                   {item.detail}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="font-mono text-[12px] text-locro-border/75">
+          <p className="font-mono text-[12px] text-locro-sand/75">
             <span className="text-locro-accent">{"//"}</span> diagnóstico · desarrollo · seguimiento
           </p>
         </div>

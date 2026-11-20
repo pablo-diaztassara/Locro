@@ -102,7 +102,7 @@ export function ContactSection() {
             <h2 className="mt-4 font-display text-[30px] leading-[1.12] font-bold tracking-[-0.02em] sm:text-[36px]">
               Contanos qué proceso querés ordenar
             </h2>
-            <p className="mt-4 text-[15.5px] leading-[1.6] text-locro-border">
+            <p className="mt-4 text-[15.5px] leading-[1.6] text-locro-sand">
               Agendamos una charla directa de 20 minutos para ver tus
               herramientas actuales y detectar dónde podés ahorrar horas rápido.
               Sin compromiso ni presentaciones eternas.
@@ -129,18 +129,18 @@ export function ContactSection() {
                 </svg>
                 Escribinos por WhatsApp
               </a>
-              <p className="mt-2.5 font-mono text-[12px] text-locro-border/80">
+              <p className="mt-2.5 font-mono text-[12px] text-locro-sand/80">
                 ¿Preferís algo más rápido? Mandanos un mensaje directo.
               </p>
             </div>
           </div>
 
-          <div className="mt-8 space-y-3 border-t border-locro-border/20 pt-6 text-[14px] text-locro-border">
+          <div className="mt-8 space-y-3 border-t border-locro-sand/20 pt-6 text-[14px] text-locro-sand">
             <p>
               <span className="font-mono text-locro-maize">mail:</span>{" "}
               <a
                 href="mailto:somoslocro@gmail.com"
-                className="underline decoration-locro-border/40 underline-offset-4 transition-colors hover:text-white"
+                className="underline decoration-locro-sand/40 underline-offset-4 transition-colors hover:text-white"
               >
                 somoslocro@gmail.com
               </a>
@@ -151,12 +151,12 @@ export function ContactSection() {
                 href="https://instagram.com/somoslocro"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-locro-border/40 underline-offset-4 transition-colors hover:text-white"
+                className="underline decoration-locro-sand/40 underline-offset-4 transition-colors hover:text-white"
               >
                 @somoslocro
               </a>
             </p>
-            <p className="font-mono text-[12px] text-locro-border/80">
+            <p className="font-mono text-[12px] text-locro-sand/80">
               Respuesta garantizada en menos de 24h hábiles.
             </p>
           </div>

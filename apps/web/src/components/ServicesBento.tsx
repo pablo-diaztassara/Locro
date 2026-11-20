@@ -101,36 +101,36 @@ export function ServicesBento() {
           <div>
             <div className="flex items-center justify-between font-mono text-[12px] font-medium">
               <span className="text-locro-accent">pack_03</span>
-              <span className="rounded-full border border-locro-border/25 px-2.5 py-0.5 text-locro-border">
+              <span className="rounded-full border border-locro-sand/25 px-2.5 py-0.5 text-locro-sand">
                 2 a 4 semanas
               </span>
             </div>
             <h3 className="mt-4 font-display text-[24px] leading-[1.2] font-bold tracking-[-0.02em] text-locro-ink-on-dark">
               Agentes de IA Aplicados
             </h3>
-            <p className="mt-3 text-[15.5px] leading-[1.6] text-locro-border">
+            <p className="mt-3 text-[15.5px] leading-[1.6] text-locro-sand">
               Asistentes entrenados con tu catálogo, precios y políticas que
               responden consultas 24/7 por WhatsApp o web, califican clientes y
               agendan reuniones directo en tu calendario.
             </p>
           </div>
 
-          <div className="mt-7 grid grid-cols-1 gap-3 border-t border-locro-border/20 pt-5 sm:grid-cols-3">
+          <div className="mt-7 grid grid-cols-1 gap-3 border-t border-locro-sand/20 pt-5 sm:grid-cols-3">
             <div>
               <p className="font-mono text-[12px] text-locro-maize">01 · responde</p>
-              <p className="mt-1 text-[13.5px] text-locro-border">
+              <p className="mt-1 text-[13.5px] text-locro-sand">
                 Con tu tono y tus datos reales, sin inventar respuestas.
               </p>
             </div>
             <div>
               <p className="font-mono text-[12px] text-locro-maize">02 · califica</p>
-              <p className="mt-1 text-[13.5px] text-locro-border">
+              <p className="mt-1 text-[13.5px] text-locro-sand">
                 Filtra consultas y junta los datos antes de pasar a ventas.
               </p>
             </div>
             <div>
               <p className="font-mono text-[12px] text-locro-maize">03 · deriva</p>
-              <p className="mt-1 text-[13.5px] text-locro-border">
+              <p className="mt-1 text-[13.5px] text-locro-sand">
                 Escala a una persona de tu equipo cuando hace falta.
               </p>
             </div>

@@ -12,12 +12,12 @@ export function Footer() {
             height={32}
             className="h-7 w-auto self-start"
           />
-          <p className="font-mono text-[12.5px] text-locro-border">
+          <p className="font-mono text-[12.5px] text-locro-sand">
             ia &amp; software a medida_
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 text-[14px] text-locro-border sm:items-end">
+        <div className="flex flex-col gap-2 text-[14px] text-locro-sand sm:items-end">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <a
               href="mailto:somoslocro@gmail.com"
@@ -34,7 +34,7 @@ export function Footer() {
               @somoslocro
             </a>
           </div>
-          <p className="font-mono text-[12px] text-locro-border/75">
+          <p className="font-mono text-[12px] text-locro-sand/75">
             © 2026 {`{ locro. }`} · locro.com.ar
           </p>
         </div>
