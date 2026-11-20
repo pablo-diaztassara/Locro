@@ -183,3 +183,23 @@ La interfaz de `{ locro. }` combina la claridad de una **fintech B2B moderna** c
   ia & software a medida_
   locro.com.ar · @somoslocro
   ```
+
+---
+
+## Modo oscuro (web)
+
+Es un tema alternativo cálido, activable con el botón de la barra de navegación (`data-theme="dark"`). Respeta las prohibiciones de marca: sin negro puro, sin neón ni glow.
+
+| Token | Claro | Oscuro |
+| :--- | :--- | :--- |
+| `--locro-bg` | `#F9F4EB` | `#2B1A0E` |
+| `--locro-surface` | `#FFFFFF` | `#3A2212` |
+| `--locro-surface-dark` | `#3A2212` | `#1E1109` |
+| `--locro-border` | `#E6DDD0` | `#5A4333` |
+| `--locro-ink` | `#3A2212` | `#F9F4EB` |
+| `--locro-ink-muted` | `#6E5A4F` | `#C9B8A6` |
+
+- El naranja `#FF5A00` y el maíz `#EBA83A` no cambian.
+- Sobre fondo maíz se usa la clase `.on-maize`, que mantiene la tinta Marrón Tierra.
+- Logotipo e isotipo usan sus variantes con texto y trazos en Crema Caldo (`logo-dark.svg`, `isotipo-compact-dark.svg`).
+- Se inicia según la preferencia del sistema y se guarda la elección del usuario en `localStorage`.

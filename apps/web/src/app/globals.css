@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 @theme inline {
   --color-locro-bg: var(--locro-bg);
   --color-locro-surface: var(--locro-surface);
@@ -46,7 +48,7 @@ body {
 }
 
 .bento-card-interactive:hover {
-  border-color: #d6c8b6;
+  border-color: var(--locro-ink-muted);
   box-shadow: var(--locro-shadow-md);
   transform: translateY(-2px);
 }

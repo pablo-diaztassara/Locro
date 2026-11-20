@@ -30,7 +30,7 @@ export function ProcessSection() {
     >
       <div className="max-w-2xl">
         <p className="font-mono text-[13px] font-medium text-locro-accent">
-          {"// 03 cómo trabajamos"}
+          {"// 04 cómo trabajamos"}
         </p>
         <h2 className="mt-3 font-display text-[28px] leading-[1.15] font-bold tracking-[-0.02em] text-locro-ink sm:text-[36px]">
           Sin proyectos eternos ni sorpresas

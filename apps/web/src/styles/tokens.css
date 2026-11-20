@@ -69,3 +69,22 @@
   /* === Escala mínima de assets === */
   --locro-isotipo-min-height: 120px;
 }
+
+/* === Modo Oscuro cálido (marrones de la marca; nunca #000000, sin neón ni glow) === */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --locro-bg: #2B1A0E;
+  --locro-surface: var(--locro-marron-tierra);
+  --locro-surface-dark: #1E1109;
+  --locro-border: #5A4333;
+
+  --locro-ink: var(--locro-crema-caldo);
+  --locro-ink-muted: #C9B8A6;
+  --locro-ink-on-dark: var(--locro-crema-caldo);
+  --locro-ink-muted-on-dark: #C9B8A6;
+}
+
+/* Elementos sobre fondo Amarillo Maíz conservan tinta Marrón Tierra en ambos modos */
+.on-maize {
+  --locro-ink: var(--locro-marron-tierra);
+}

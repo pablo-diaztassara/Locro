@@ -30,6 +30,8 @@ const existingTools = [
   "Google Sheets / Excel",
   "Gmail",
   "Tango / Colppy / Xubio",
+  "ARCA / AFIP",
+  "Mercado Pago",
   "Odoo",
   "Tiendanube",
   "Mercado Libre",

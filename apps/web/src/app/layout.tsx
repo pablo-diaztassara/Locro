@@ -103,8 +103,16 @@ export default function RootLayout({
   return (
     <html
       lang="es-AR"
+      suppressHydrationWarning
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem("locro-theme");if(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches)t="dark";if(t==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`,
+          }}
+        />
+      </head>
       <body className="min-h-screen bg-locro-bg text-locro-ink antialiased">
         <script
           type="application/ld+json"

@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { href: "#problemas", label: "Problemas" },
   { href: "#servicios", label: "Qué armamos" },
+  { href: "#proyectos", label: "Proyectos" },
   { href: "#proceso", label: "Cómo trabajamos" },
 ];
 
@@ -18,15 +20,39 @@ export function Navbar() {
         <a
           href="#"
           aria-label="{ locro. } — Inicio"
-          className="inline-flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-locro-accent rounded-lg"
+          className="inline-flex items-center gap-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-locro-accent rounded-lg"
         >
+          <Image
+            src="/brand/isotipo-compact.svg"
+            alt=""
+            aria-hidden="true"
+            width={44}
+            height={44}
+            priority
+            className="h-10 w-10 dark:hidden shrink-0 -translate-y-[2px]"
+          />
+          <Image
+            src="/brand/isotipo-compact-dark.svg"
+            alt=""
+            aria-hidden="true"
+            width={44}
+            height={44}
+            className="h-10 w-10 hidden dark:block shrink-0 -translate-y-[2px]"
+          />
           <Image
             src="/brand/logo.svg"
             alt="{ locro. }"
             width={132}
             height={34}
             priority
-            className="h-8 w-auto"
+            className="dark:hidden -ml-6 h-10 w-auto"
+          />
+          <Image
+            src="/brand/logo-dark.svg"
+            alt="{ locro. }"
+            width={132}
+            height={34}
+                        className="hidden dark:block -ml-6 h-10 w-auto"
           />
         </a>
 
@@ -42,15 +68,18 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <ThemeToggle />
           <a
             href="#diagnostico"
             className="inline-flex items-center justify-center rounded-[12px] bg-locro-accent px-5 py-2.5 text-[15px] font-semibold text-white transition-colors hover:bg-locro-accent-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-locro-accent focus-visible:ring-offset-2 focus-visible:ring-offset-locro-bg"
           >
-            Agendar diagnóstico
+            Hablemos
           </a>
         </div>
 
+        <div className="flex items-center gap-2 md:hidden">
+        <ThemeToggle />
         <button
           type="button"
           aria-expanded={menuOpen}
@@ -79,6 +108,7 @@ export function Navbar() {
             </svg>
           )}
         </button>
+        </div>
       </div>
 
       {menuOpen && (
@@ -102,7 +132,7 @@ export function Navbar() {
               onClick={() => setMenuOpen(false)}
               className="mt-1 inline-flex w-full items-center justify-center rounded-[12px] bg-locro-accent px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-locro-accent-hover"
             >
-              Agendar diagnóstico de 20 min
+              Hablemos
             </a>
           </div>
         </div>

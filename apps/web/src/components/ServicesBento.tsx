@@ -27,7 +27,7 @@ export function ServicesBento() {
 
       <div className="mt-8 grid grid-cols-1 gap-5 lg:grid-cols-12">
         {/* Pack 01 — Card Acento Amarillo Maíz */}
-        <article className="flex flex-col justify-between rounded-[20px] bg-locro-maize p-7 text-locro-ink sm:p-8 lg:col-span-5">
+        <article className="flex flex-col justify-between on-maize rounded-[20px] bg-locro-maize p-7 text-locro-ink sm:p-8 lg:col-span-5">
           <div>
             <div className="flex items-center justify-between font-mono text-[12px] font-medium">
               <span>pack_01</span>
